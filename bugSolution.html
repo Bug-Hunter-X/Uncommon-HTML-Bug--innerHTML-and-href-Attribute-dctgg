@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    //Correct way to modify the content of the div
+    const newParagraph = document.createElement("p");
+    newParagraph.textContent = "This is a paragraph.";
+
+    const newLink = document.createElement("a");
+    newLink.href = "https://www.example.com";
+    newLink.textContent = "This is a link";
+
+    document.getElementById("myDiv").appendChild(newParagraph);
+    document.getElementById("myDiv").appendChild(newLink);
+  </script>
+</body>
+</html>
