@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    //Incorrect way to modify the content of the div with innerHTML
+    document.getElementById("myDiv").innerHTML = "<p>This is a paragraph.</p><a href = 'https://www.example.com'>This is a link</a>";
+  </script>
+</body>
+</html>
